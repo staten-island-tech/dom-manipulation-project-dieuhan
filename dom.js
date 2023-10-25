@@ -1,17 +1,20 @@
-DOMSelectors = {
+const DOMSelectors = {
     // store all related code for selecting elements here
         form: document.querySelector("#form"),
-        firstname: document.querySelector(".first-name"),
+        pokemon: document.querySelector(".pokemon-name"),
         h2s: document.querySelectorAll("h2"),
-        form2: document.querySelector("#form"),
-        lastname: document.querySelector(".last-name"),
+        type: document.querySelector(".ele-type"),
+        img: document.querySelector("image"),
+        card: document.querySelector("card")
 
     };
 
-    console.log(DOMSelectors.h2s)
+   
+
+    console.log(DOMSelectors.card)
     DOMSelectors.form.addEventListener("submit", function (event) {
       event.preventDefault();
-        DOMSelectors.h2s.forEach((header)=> header.textContent = DOMSelectors.firstname.value, 
+        DOMSelectors.card.forEach((header)=> header.textContent = DOMSelectors.card, 
       
         );
     });
