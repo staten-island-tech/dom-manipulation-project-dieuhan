@@ -11,7 +11,7 @@ DOMSelectors = {
     console.log(DOMSelectors.h2s)
     DOMSelectors.form.addEventListener("submit", function (event) {
       event.preventDefault();
-        DOMSelectors.h2s.forEach((header)=> header.textContent = DOMSelectors.firstname.value, DOMSelectors.lastname.value,
+        DOMSelectors.h2s.forEach((header)=> header.textContent = DOMSelectors.firstname.value, 
       
         );
     });
