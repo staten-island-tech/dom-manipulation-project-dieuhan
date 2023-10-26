@@ -21,10 +21,47 @@
  */
 
 const DOMSelectors = {
-pokemon: document.querySelector("#form-name"),
-type: document.querySelector("#ele-type"),
-img: document.querySelector("image"),
+pokemon: document.querySelector(".pokemon-name"),
+type: document.querySelector(".ele-type"),
+img: document.querySelector(".image"),
+card: document.querySelector(".card"),
+input: document.querySelector(".input"),
+gallery: document.querySelector(".gallery"),
+form: document.querySelector("#form"),
 };
+
+
+console.log(DOMSelectors);
+DOMSelectors.form.addEventListener("submit", function (event){
+  event.preventDefault();
+  console.log(DOMSelectors.pokemon.value)
+  console.log(DOMSelectors.type.value)
+  console.log(DOMSelectors.img.value)
+  function card (){
+    DOMSelectors.gallery.insertAdjacentHTML("afterbegin", `<div class="card"> <h2> ${DOMSelectors.pokemon.value}  
+    ${DOMSelectors.type.value} ${DOMSelectors.img.value} </h2> </div> `)
+    
+  };
+  card()});
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
  
 
 
