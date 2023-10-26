@@ -36,10 +36,10 @@ DOMSelectors.form.addEventListener("submit", function (event){
   event.preventDefault();
   console.log(DOMSelectors.pokemon.value)
   console.log(DOMSelectors.type.value)
-  console.log(DOMSelectors.img.value)
+
   function card (){
     DOMSelectors.gallery.insertAdjacentHTML("afterbegin", `<div class="card"> <h2> ${DOMSelectors.pokemon.value}  
-    ${DOMSelectors.type.value} ${DOMSelectors.img.value} </h2> </div> `)
+    ${DOMSelectors.type.value}  </h2> </div> `)
     
   };
   card()});
