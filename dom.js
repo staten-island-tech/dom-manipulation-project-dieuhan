@@ -1,4 +1,4 @@
-const DOMSelectors = {
+/* const DOMSelectors = {
     // store all related code for selecting elements here
         form: document.querySelector("#form"),
         pokemon: document.querySelector(".pokemon-name"),
@@ -18,8 +18,20 @@ const DOMSelectors = {
       
         );
     });
+ */
 
-      
+const DOMSelectors = {
+pokemon: document.querySelector("#form-name"),
+type: document.querySelector("#ele-type"),
+img: document.querySelector("image"),
+};
+ 
+
+
+
+
+
+
 
 
 
