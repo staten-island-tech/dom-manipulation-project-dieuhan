@@ -36,6 +36,8 @@ DOMSelectors.form.addEventListener("submit", function (event){
   event.preventDefault();
   console.log(DOMSelectors.pokemon.value)
   console.log(DOMSelectors.type.value)
+  console.log(DOMSelectors.img.value)
+  
 
   function card (){
     DOMSelectors.gallery.insertAdjacentHTML("afterbegin", `<div class="card"> <h2> ${DOMSelectors.pokemon.value}  
@@ -43,6 +45,16 @@ DOMSelectors.form.addEventListener("submit", function (event){
     
   };
   card()});
+
+  /* function remove(){
+    let buttons = document.querySelectorAll("button")
+    buttons.forEach((btn)=> btn.addEventListener('click', function(event){
+      console.log(event.target.parentElement);
+    })
+    );
+  }
+  
+  remove(); */
   
     
 

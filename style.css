@@ -4,9 +4,10 @@
     width: 28%;
     background-color: rgba(125, 121, 129, 0.265);
     display: flex;
-    align-items: center;
     box-shadow: 7px 10px rgb(101, 164, 135);
     transition: all 450ms;
+    
+    
 }
 
 .gallery{
@@ -16,4 +17,13 @@
     justify-content: space-around;
     width: 80vw;   
 }
+
+.card-title{
+    text-align: center;
+    margin-left: 28px;
+}
+
+
+
+
 
