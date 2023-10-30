@@ -36,7 +36,7 @@ DOMSelectors.form.addEventListener("submit", function (event){
   event.preventDefault();
   console.log(DOMSelectors.pokemon.value)
   console.log(DOMSelectors.type.value)
-  console.log(DOMSelectors.img.value)
+  console.log()
   
 
   function card (){
