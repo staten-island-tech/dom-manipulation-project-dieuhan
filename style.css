@@ -23,6 +23,17 @@
     margin-left: 28px;
 }
 
+.img-edit{
+    align-items: center;
+    margin-left: 15px;
+    height: 90%;
+    width: 90%;
+}
+
+.names{
+    text-align: center;
+}
+
 
 
 
