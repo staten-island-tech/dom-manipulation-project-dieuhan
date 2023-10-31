@@ -41,7 +41,7 @@ DOMSelectors.form.addEventListener("submit", function (event){
 
   function card (){
     DOMSelectors.gallery.insertAdjacentHTML("afterbegin", `<div class="card"> <h2 class="names"> ${DOMSelectors.pokemon.value}  
-    ${DOMSelectors.type.value}  </h2> <img class ="img-edit" src=${DOMSelectors.img.value} alt=""> </div> `)
+    ${DOMSelectors.type.value} <img class ="img-edit" src=${DOMSelectors.img.value} alt=""> </h2>  </div> `)
     
   };
   card()});

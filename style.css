@@ -18,14 +18,9 @@
     width: 80vw;   
 }
 
-.card-title{
-    text-align: center;
-    margin-left: 28px;
-}
 
 .img-edit{
-    align-items: center;
-    margin-left: 15px;
+    align-items: center;;
     height: 90%;
     width: 90%;
 }
@@ -33,6 +28,7 @@
 .names{
     text-align: center;
 }
+
 
 
 
