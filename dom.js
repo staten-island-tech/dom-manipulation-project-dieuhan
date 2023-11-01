@@ -46,7 +46,7 @@ DOMSelectors.form.addEventListener("submit", function (event){
   };
   card()});
 
-  /* function remove(){
+ function remove(){
     let buttons = document.querySelectorAll("button")
     buttons.forEach((btn)=> btn.addEventListener('click', function(event){
       console.log(event.target.parentElement);
@@ -54,7 +54,7 @@ DOMSelectors.form.addEventListener("submit", function (event){
     );
   }
   
-  remove(); */
+  remove(); 
   
     
 
