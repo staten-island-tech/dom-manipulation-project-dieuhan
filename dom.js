@@ -5,6 +5,8 @@ card: document.querySelector(".card"),
 input: document.querySelector(".input"),
 gallery: document.querySelector(".gallery"),
 form: document.querySelector("#form"),
+remove: document.querySelector("#remove"),
+
 };
 
 
@@ -16,21 +18,37 @@ DOMSelectors.form.addEventListener("submit", function (event){
   
 
   function card (){
-    DOMSelectors.gallery.insertAdjacentHTML("afterbegin", `<div class="card"> <h2 class="names"> ${DOMSelectors.pokemon.value}  
-    <img class ="img-edit" src=${DOMSelectors.img.value} alt=""> </h2>  </div> `)
+    DOMSelectors.gallery.insertAdjacentHTML("beforeend", `<div class="card"> <h2 class="names"> 
+    ${DOMSelectors.pokemon.value}  
+    <img class ="img-edit" src=${DOMSelectors.img.value} alt="">
+  
+    </h2> 
+    <button class="remove" type ="remove">remove</button> 
+    </div> `)
     
-  };
-  card()});
+  }
+  card()
+  clear()
+  remove()
+});
+
+
+
+  function clear(){
+    DOMSelectors.pokemon.value = ""
+    DOMSelectors.img.value = ""
+    
+   
+    
+   
+  }
 
  function remove(){
-    let buttons = document.querySelectorAll("button")
-    buttons.forEach((btn)=> btn.addEventListener('click', function(event){
-      console.log(event.target.parentElement);
-    })
-    );
-  }
+    const button = document.querySelectorAll(".remove");
+    button.forEach((button)=> button.addEventListener("click", function(button){
+      button.target.parentElement.remove()}))};
   
-  remove(); 
+ 
   
     
 
