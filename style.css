@@ -21,13 +21,21 @@
 
 .img-edit{
     align-items: center;;
-    height: 90%;
-    width: 90%;
+    height: 84%;
+    width: 93%;
 }
 
 .names{
     text-align: center;
 }
+
+.remove{
+    align-self:flex-end;
+    align-self: center;
+    height: 6%;
+    width: 19%;
+}
+
 
 
 
